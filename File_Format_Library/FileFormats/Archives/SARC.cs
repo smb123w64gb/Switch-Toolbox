@@ -262,7 +262,7 @@ namespace FirstPlugin
                     sarcData.Files.Add(file.FileName, file.FileData);
             }
 
-            Tuple<int, byte[]> sarc = SARCExt.SARC.PackN(sarcData);
+            Tuple<int, byte[]> sarc = SARCExt.SARC.PackN(sarcData,0x2000);
 
             IFileInfo.Alignment = sarc.Item1;
 
